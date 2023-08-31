@@ -1,0 +1,165 @@
+body {
+    color: var(--primary-color);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+a {
+    color: var(--primary-light-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-dark-color);
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 32px;
+    margin-left: 32px;
+    font-weight: bold;
+    color: var(--primary-dark-color);
+}
+
+.header {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.main {
+    margin-top: 81px;
+}
+.product__img {
+    border-radius: 12px;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.product__footer {
+    padding: 8px;
+    display: flex;
+}
+
+.product__name {
+    flex: 1 0 auto;
+    color: var(--primary-light-color);
+    font-size: 14px;
+}
+
+.product__name:hover {
+    text-decoration: underline;
+    color: var(--primary-dark-color);
+}
+
+.product__price {
+    font-weight: bold;
+    color: var(--primary-dark-color);
+    font-size: 14px;
+}
+
+.product__img:hover {
+    transform: scale(1.1);
+}
+
+.container__header {
+    display: flex;
+    color: var(--primary-light-color);
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--primary-dark-color);
+}
+
+.burger__icon {
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.icons {
+    display: none;
+}
+
+.menu_nav {
+    display: none;
+}
+
+
+.menu__item {
+    text-transform: uppercase;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: var(--primary-dark-color);
+    font-size: 16px;
+    gap: 32px;
+}
+
+.footer__image {
+    display: inline-block;
+    padding: 8px;
+    background-color: var(--primary-color);
+    border-radius: 32px;
+}
+
+.footer__item {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid white;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.footer__text {
+    font-weight: bold;
+    align-self: center;
+}
+
+@media screen and (min-width: 920px) {
+    .menu_nav {
+        display: flex;
+        flex: 1 0 auto;
+        gap: 8px;
+        text-size-adjust: 16px;
+        justify-content: center;
+        margin: auto 0;
+    }
+
+    .burger__icon {
+        flex: 0 1 auto;
+    }
+
+    .benefits {
+        color: var(--primary-light-color);
+        text-size-adjust: 16px;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        gap: 32px;
+        flex: 0 1 auto;
+
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer__item {
+        border-bottom: none;
+    }
+
+}
