@@ -126,6 +126,9 @@ h1 {
     font-weight: bold;
     align-self: center;
 }
+.footer__text:hover {
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 920px) {
     .menu_nav {
